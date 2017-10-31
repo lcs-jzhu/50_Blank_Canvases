@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
 
 /*:
  ## Add your code below
@@ -24,7 +24,16 @@ let canvas = Canvas(width: 400, height: 300)
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
-
+canvas.translate(byX: 250, byY: 250)
+for _ in stride(from: 1, through: 12, by: 1){
+    //draw the pattern
+    canvas.borderColor = Color.init(hue: 198, saturation: 100, brightness: 72, alpha: 50)
+    canvas.fillColor = Color.init(hue: 198, saturation: 100, brightness: 72, alpha: 50)
+    canvas.drawEllipse(centreX: 100, centreY: 0, width: 250, height: 100)
+    
+    //rotate
+    canvas.rotate(by:30)
+}
 
 
 

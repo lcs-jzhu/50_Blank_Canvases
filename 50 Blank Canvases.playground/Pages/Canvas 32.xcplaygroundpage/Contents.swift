@@ -34,7 +34,7 @@ for _ in stride(from: 1, through: 12, by: 1){
     //draw the pattern
     canvas.borderColor = Color.init(hue: 157, saturation: 100, brightness: 68, alpha: 40)
     canvas.fillColor = Color.init(hue: 157, saturation: 100, brightness: 68, alpha: 40)
-    canvas.drawEllipse(centreX: 100, centreY: 0, width: 250, height: 120)
+    canvas.drawEllipse(centreX: 100, centreY: 0, width: 230, height: 90)
     
     
     //rotate

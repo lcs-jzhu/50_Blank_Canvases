@@ -24,6 +24,22 @@ let canvas = Canvas(width: 400, height: 300)
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
+//// Loop to set horizontal position
+for x in stride(from: 10,through: 0,by: -30) {
+    for y in stride(from: 300, through: 0,by: -30) {
+canvas.drawLine(fromX: x, fromY: y, toX: x - 10, toY: y-15, lineWidth: 1)
+canvas.drawLine(fromX: x, fromY: y, toX: x+10, toY: y-15,lineWidth: 1)
+canvas.drawLine(fromX: x-10, fromY: y-15, toX: x+10, toY: y-15,lineWidth: 1)
+        canvas.drawLine(fromX: x-10, fromY: y-15, toX: x, toY: y-30,lineWidth: 1)
+        canvas.drawLine(fromX: x+10, fromY: y-15, toX: x, toY: y-30)}
+}
+
+
+
+
+
+
+
 
 
 /*:
