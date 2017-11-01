@@ -35,14 +35,25 @@ canvas.drawAxes()
 
 
 // Draw a bat relative to the origin
-canvas.drawShapesWithFill
-canvas.fillColor = Color.yellow
-canvas.drawEllipse(centreX: 0, centreY: -300, width: 700, height: 600)
+//draw the pattern
+canvas.borderColor = Color.init(hue: 156, saturation: 0, brightness: 28, alpha: 100)
+canvas.fillColor = Color.init(hue: 156, saturation: 0, brightness: 28, alpha: 100)
+canvas.drawRectangle(bottomLeftX: -400, bottomLeftY: -300, width: 800, height: 600)
 
 
 
 
 
+
+
+//draw the pattern
+canvas.borderColor = Color.init(hue: 271, saturation: 100, brightness: 35, alpha: 100)
+canvas.fillColor = Color.init(hue: 271, saturation: 100, brightness: 35, alpha: 100)
+
+
+canvas.drawEllipse(centreX: 0, centreY: -300, width: 850, height: 700)
+canvas.drawEllipse(centreX: -400, centreY: -150, width: 200, height: 200)
+canvas.drawEllipse(centreX: 400, centreY: -150, width: 200, height: 200)
 
 
 
@@ -106,11 +117,23 @@ nextteethVertices.append(NSPoint(x: 50, y: -150))
 nextteethVertices.append(NSPoint(x: 100, y: -150))
 canvas.drawCustomShape(with: nextteethVertices)
 
-canvas.drawLine(fromX:-230, fromY: -300, toX: -230, toY: 50, lineWidth: 15)
-canvas.drawLine(fromX: -260, fromY: 53, toX: -200, toY: 53,lineWidth: 10)
-canvas.drawLine(fromX: -260, fromY: 53, toX: -260, toY: 133,lineWidth: 10)
-canvas.drawLine(fromX: -230, fromY: 50, toX: -230, toY: 150,lineWidth: 15)
-canvas.drawLine(fromX: -200, fromY: 53, toX: -200, toY: 133,lineWidth: 10)
+canvas.drawLine(fromX:-230, fromY: -300, toX: -230, toY: 50, lineWidth: 20)
+canvas.drawLine(fromX: -260, fromY: 53, toX: -200, toY: 53,lineWidth: 18)
+canvas.drawLine(fromX: -260, fromY: 53, toX: -260, toY: 133,lineWidth: 18)
+canvas.drawLine(fromX: -230, fromY: 50, toX: -230, toY: 180,lineWidth: 20)
+canvas.drawLine(fromX: -200, fromY: 53, toX: -200, toY: 133,lineWidth: 18)
+//tongue
+//draw the pattern
+canvas.borderColor = Color.init(hue: 45, saturation: 100, brightness: 61, alpha: 50)
+canvas.fillColor = Color.init(hue: 45, saturation: 100, brightness: 61, alpha: 50)
+
+var tongueVertices : [NSPoint] = []
+tongueVertices.append(NSPoint(x: -100, y: -200))
+tongueVertices.append(NSPoint(x: 0, y: -165))
+tongueVertices.append(NSPoint(x: 100, y: -200))
+tongueVertices.append(NSPoint(x: -100, y: -200))
+canvas.drawCustomShape(with: tongueVertices)
+
 
 
 
