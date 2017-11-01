@@ -30,7 +30,23 @@ canvas.drawShapesWithBorders = false
 canvas.translate(byX: 400, byY: 300)
 // Draw the axes so we can see where we are
 canvas.drawAxes()
+
+
+
+
 // Draw a bat relative to the origin
+canvas.drawShapesWithFill
+canvas.fillColor = Color.yellow
+canvas.drawEllipse(centreX: 0, centreY: -300, width: 700, height: 600)
+
+
+
+
+
+
+
+
+
 canvas.fillColor = Color.black
 
 canvas.drawLine(fromX: -300, fromY: -300, toX: -80, toY: 150)
@@ -90,12 +106,11 @@ nextteethVertices.append(NSPoint(x: 50, y: -150))
 nextteethVertices.append(NSPoint(x: 100, y: -150))
 canvas.drawCustomShape(with: nextteethVertices)
 
-
-
-
-
-
-
+canvas.drawLine(fromX:-230, fromY: -300, toX: -230, toY: 50, lineWidth: 15)
+canvas.drawLine(fromX: -260, fromY: 53, toX: -200, toY: 53,lineWidth: 10)
+canvas.drawLine(fromX: -260, fromY: 53, toX: -260, toY: 133,lineWidth: 10)
+canvas.drawLine(fromX: -230, fromY: 50, toX: -230, toY: 150,lineWidth: 15)
+canvas.drawLine(fromX: -200, fromY: 53, toX: -200, toY: 133,lineWidth: 10)
 
 
 
