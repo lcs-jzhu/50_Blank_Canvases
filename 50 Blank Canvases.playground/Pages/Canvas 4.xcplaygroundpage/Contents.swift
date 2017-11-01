@@ -134,6 +134,25 @@ tongueVertices.append(NSPoint(x: 100, y: -200))
 tongueVertices.append(NSPoint(x: -100, y: -200))
 canvas.drawCustomShape(with: tongueVertices)
 
+canvas.drawLine(fromX: 300, fromY: -300, toX: 330, toY: -150, lineWidth:18 )
+
+
+
+canvas.drawShapesWithFill
+canvas.fillColor = Color.red
+var tailVertices : [NSPoint] = []
+tailVertices.append(NSPoint(x: 280, y: -180))
+tailVertices.append(NSPoint(x: 330, y: -120))
+tailVertices.append(NSPoint(x: 365, y: -210))
+tailVertices.append(NSPoint(x: 280, y: -180))
+canvas.drawCustomShape(with: tailVertices)
+
+
+
+
+
+
+
 
 
 
